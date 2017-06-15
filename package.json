@@ -6,12 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "gaurav@olivetech.net",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^2.3.4"
   },
   "dependencies": {
-    "@types/angular": "^1.6.18"
-  }
+    "@types/angular": "^1.6.18",
+    "@types/angular-ui-bootstrap": "^0.13.42"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gauravolive25:gaggyH0725@github.com/gauravolive25/quickAng2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gauravolive25/quickAng2/issues"
+  },
+  "homepage": "https://github.com/gauravolive25/quickAng2#readme"
 }

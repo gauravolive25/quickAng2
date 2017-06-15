@@ -1,8 +1,9 @@
 module LoginApp {
     
-    angular.module('loginApp', ["ngRoute"])
+    angular.module('loginApp', ["ngRoute", "ui.bootstrap"])
         .controller('mainController', MainController)
         .controller('loginController', LoginController)
+        .controller('editUserController', EditUserController)
         .service('userService', UserService);
 
     angular.module('loginApp').config(routeConfig);

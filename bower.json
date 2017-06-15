@@ -1,0 +1,24 @@
+{
+  "name": "myangtype",
+  "description": "Login App with Angular 1 and Typescript",
+  "main": "index.js",
+  "authors": [
+    "gaurav@olivetech.net"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/gauravolive25/quickAng2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^2.5.0",
+    "angular-route": "^1.6.4",
+    "angular-ui-bootstrap": "^2.5.0",
+    "jquery": "^3.2.1"
+  }
+}

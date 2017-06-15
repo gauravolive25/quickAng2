@@ -10,6 +10,9 @@ var LoginApp;
         };
         return LoginController;
     }());
+    LoginController.$inject = [
+        'userService',
+    ];
     LoginApp.LoginController = LoginController;
 })(LoginApp || (LoginApp = {}));
 //# sourceMappingURL=loginController.js.map
