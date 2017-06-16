@@ -34,10 +34,21 @@ var LoginApp;
         };
         UserService.prototype.updateUser = function (userData) {
             var _this = this;
-            console.log(userData);
             var result = this.$http({
                 method: 'POST',
-                url: 'http://localhost:1337/user/updateUser',
+                url: 'http://localhost:1337/user/updateOrCreate',
+                data: userData
+            }).then(function (response) { return _this.handlerResponded(response); }, function errorCallback(response) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+            });
+            return result;
+        };
+        UserService.prototype.deleteUser = function (userData) {
+            var _this = this;
+            var result = this.$http({
+                method: 'POST',
+                url: 'http://localhost:1337/user/deleteUser',
                 data: userData
             }).then(function (response) { return _this.handlerResponded(response); }, function errorCallback(response) {
                 // called asynchronously if an error occurs

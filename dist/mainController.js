@@ -32,9 +32,17 @@ var LoginApp;
                 .then(function (updatedItem) { return _this.updateUser(updatedItem); });
         };
         MainController.prototype.updateUser = function (userData) {
+            var _this = this;
             this.userService.updateUser(userData)
                 .then(function (users) {
-                console.log(users);
+                _this.users = users;
+            });
+        };
+        MainController.prototype.deleteUser = function (userData) {
+            var _this = this;
+            this.userService.deleteUser(userData)
+                .then(function (users) {
+                _this.users = users;
             });
         };
         return MainController;

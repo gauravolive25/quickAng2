@@ -1,6 +1,7 @@
 
 <div class="container">
 <div class="row"><h2>All Users</h2></div>
+<div class="row"><button class="btn btn-small pull-right" ng-click="vm.editUser()">Add User</button></div>
 <div class="row">
        <div class="col-md-3"><b>Name</b></div>
        <div class="col-md-3"><b>Email</b></div>
@@ -9,7 +10,7 @@
 <div class="row" ng-repeat="user in vm.users | filter:vm.searchText | orderBy:'name'">
        <div class="col-md-3"><strong>{{user.name}}</strong></div>
        <div class="col-md-3"><strong>{{user.email}}</strong></div>
-       <div class="col-md-3"><strong><a href="javascript:void(0)" class="btn btn-red" ng-click="vm.deleteUser(user._id)">Delete</a><a href="javascript:void(0)" class="btn btn-red" ng-click="vm.editUser(user)">Edit</a></strong></div>
+       <div class="col-md-3"><strong><a href="javascript:void(0)" class="btn btn-red" ng-click="vm.deleteUser(user)">Delete</a><a href="javascript:void(0)" class="btn btn-red" ng-click="vm.editUser(user)">Edit</a></strong></div>
 </div>
 </div>
 <div class="myModal"></div>

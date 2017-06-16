@@ -39,10 +39,19 @@ module LoginApp {
         updateUser(userData: any): void {
           this.userService.updateUser(userData)
                     .then((users: User[]) => {
-                      console.log(users);
+                      this.users = users;
                       
                       });
           } 
+
+        deleteUser(userData: any): void {
+          this.userService.deleteUser(userData)
+                    .then((users: User[]) => {
+                      this.users = users;
+                      
+                      });
+          } 
+
 
         }
 
